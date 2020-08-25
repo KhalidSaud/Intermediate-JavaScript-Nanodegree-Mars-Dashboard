@@ -64,7 +64,7 @@ return `
 
 function RoversImagesForRender(roverObject) {
     // If image does not already exist, or it is not from today -- request it again
-    if(typeof roverObject?.images?.photos?.length !== "undefined")  {
+    if(typeof roverObject.images !== "undefined")  {
         // If image does not already exist, or it is not from today -- request it again
         return (`
             <p>Launch Date: ${roverObject.images.photos[0].rover.launch_date}</p>
